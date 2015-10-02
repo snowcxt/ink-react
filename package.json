@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/snowcxt/ink-react#readme",
   "dependencies": {
+    "babel": "^5.8.23",
     "express": "^4.13.3",
     "juice": "^1.5.0",
     "react": "^0.13.3"
