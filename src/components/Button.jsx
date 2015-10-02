@@ -1,16 +1,13 @@
 var React = require('react');
 
 module.exports = React.createClass({
-  getDefaultProps: function() {
-    return {
-      type: ""
-    };
-  },
   render: function() {
     return (
-      <table className={"row " + this.props.type}>
+      <table className={"tiny-button " + this.props.type}>
         <tr>
-          {this.props.children}
+          <td>
+            <a href={this.props.href}>{this.props.children}</a>
+          </td>
         </tr>
       </table>
     );
