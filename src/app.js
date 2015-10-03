@@ -1,17 +1,12 @@
 require('babel/register');
 
 var express = require('express'),
-  React = require('react'),
-  juice = require("juice");
-
+	compiler = require('./compiler');
 var app = express();
-
-var template1 = require('./template1');
-var ReactApp = React.createFactory(template1);
 
 app
   .get('/', function(req, res) {
-    res.send(juice(React.renderToStaticMarkup(ReactApp())));
+    res.send(compiler(require('./template1')));
   });
 
 app
