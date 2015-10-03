@@ -1,22 +1,15 @@
-var React = require('react'),
-  path = require('path'),
-  fs = require('fs');
-
+var React = require('react');
 var Header = require('./Header');
 
 module.exports = React.createClass({
   render: function() {
-    var css = fs.readFileSync(path.join(__dirname, "/../style.css"), {
-      encoding: 'utf-8'
-    });
-
     return (
       <html>
         <head>
           <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
           <meta content="width=device-width" name="viewport"/>
           <style dangerouslySetInnerHTML={{
-            __html: css
+            __html: this.props.css
           }}></style>
         </head>
         <body>

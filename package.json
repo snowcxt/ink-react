@@ -2,16 +2,15 @@
   "name": "ink-react",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node src/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node example/app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/snowcxt/ink-react.git"
   },
-  "author": "",
+  "author": "snowcxt",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/snowcxt/ink-react/issues"
@@ -19,8 +18,10 @@
   "homepage": "https://github.com/snowcxt/ink-react#readme",
   "dependencies": {
     "babel": "^5.8.23",
-    "express": "^4.13.3",
     "juice": "^1.5.0",
     "react": "^0.13.3"
+  },
+  "devDependencies": {
+    "express": "^4.13.3"
   }
 }

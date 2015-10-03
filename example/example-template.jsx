@@ -1,14 +1,16 @@
 var React = require('react');
+import {Html, Content, Row, Wrapper, Button} from "../src"
 
-var Html = require('./components/Html');
-var Content = require('./components/Content');
-var Row = require('./components/Row');
-var Wrapper = require('./components/Wrapper');
-var Button = require('./components/Button');
+var path = require('path');
+var fs = require('fs');
+var css = fs.readFileSync(path.join(__dirname, "style.css"), {
+      encoding: 'utf-8'
+    });
+
 module.exports = React.createClass({
   render: function() {
     return (
-      <Html title="example">
+      <Html title="example" css={css}>
         <Content>
           <Row>
             <Wrapper type="last">
