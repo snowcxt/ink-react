@@ -1,7 +1,8 @@
 require('babel/register');
 
 var express = require('express'),
-  React = require('react');
+  React = require('react'),
+  juice = require("juice");
 
 var app = express();
 
@@ -10,7 +11,7 @@ var ReactApp = React.createFactory(template1);
 
 app
   .get('/', function(req, res) {
-    res.send(React.renderToString(ReactApp()));
+    res.send(juice(React.renderToStaticMarkup(ReactApp())));
   });
 
 app
