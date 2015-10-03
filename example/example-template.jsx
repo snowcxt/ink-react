@@ -27,11 +27,11 @@ module.exports = React.createClass({
           <Row type="footer">
             <Wrapper className="left-text-pad" columns="six">
               <h5>Connect With Us:</h5>
-              <Button href="#" type="facebook">Facebook</Button>
+              <Button href="#" className="tiny-button facebook">Facebook</Button>
               <br/>
-              <Button href="#" type="twitter">Twitter</Button>
+              <Button href="#" className="tiny-button twitter">Twitter</Button>
               <br/>
-              <Button href="#" type="google-plus">Google +</Button>
+              <Button href="#" className="tiny-button google-plus">Google +</Button>
             </Wrapper>
             <Wrapper className="right-text-pad" columns="six" type="last">
               <h5>Contact Info:</h5>
