@@ -5,7 +5,7 @@ var express = require('express'),
     app = express();
 
 app.get('/', function(req, res) {
-    res.send(compiler(require('./example-template')));
+    res.send(compiler(require('./sidebar-hero')));
 });
 
 app.listen(9876, function() {
