@@ -1,7 +1,6 @@
-var React = require('react'),
-	juice = require("juice");
+var React = require('react');
 
 module.exports = function(template) {
 	var ReactApp = React.createFactory(template);
-	return juice(React.renderToStaticMarkup(ReactApp()));
+	return React.renderToStaticMarkup(ReactApp());
 };
