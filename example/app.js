@@ -1,5 +1,7 @@
+require('babel/register');
+
 var express = require('express'),
-    compiler = require('../src').compiler,
+    compiler = require('../').compiler,
     app = express();
 
 app.get('/', function(req, res) {

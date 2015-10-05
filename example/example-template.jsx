@@ -1,5 +1,5 @@
 var React = require('react');
-import {Html, Content, Row, Wrapper, Button} from "../src"
+import {Html, Content, Row, Wrapper, Button} from "../"
 
 var path = require('path');
 var fs = require('fs');
