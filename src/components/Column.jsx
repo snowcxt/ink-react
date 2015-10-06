@@ -14,7 +14,7 @@ module.exports = React.createClass({
             <td className={this.props.className}>
               {this.props.children}
             </td>
-            <td class="expander"></td>
+            <td className="expander"></td>
           </tr>
         </tbody>
       </table>
