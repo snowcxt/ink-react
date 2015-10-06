@@ -35,7 +35,7 @@ module.exports = React.createClass({
             </Wrapper>
           </Row>
           <Row>
-            <Wrapper columns="six">
+            <Wrapper>
               <Column number="six">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et. Lorem ipsum dolor sit amet.</p>
 
@@ -45,7 +45,7 @@ module.exports = React.createClass({
                 </Button>
               </Column>
             </Wrapper>
-            <Wrapper columns="six" type="last">
+            <Wrapper type="last">
               <Column className="panel" number="six">
                 <h6>Header Thing</h6>
                 <p>Sub-head or something</p>
