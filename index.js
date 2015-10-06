@@ -4,5 +4,6 @@ module.exports = {
     Content: require('./lib/components/Content'),
     Row: require('./lib/components/Row'),
     Wrapper: require('./lib/components/Wrapper'),
+    Column: require('./lib/components/Column'),
     Button: require('./lib/components/Button')
 }
