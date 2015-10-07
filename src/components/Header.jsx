@@ -1,6 +1,13 @@
 var React = require('react');
 
 module.exports = React.createClass({
+  getDefaultProps: function() {
+    return {
+      title: "ink react",
+      imageSrc: "http://placehold.it/200x50"
+    };
+  },
+
   render: function() {
     return (
       <table className="row header">
@@ -16,7 +23,7 @@ module.exports = React.createClass({
                           <tbody>
                             <tr>
                               <td className="six sub-columns">
-                                <img src={this.props.image}/>
+                                <img src={this.props.imageSrc}/>
                               </td>
                               <td className="six sub-columns last" style={{
                                 textAlign: 'right',

@@ -10,7 +10,7 @@ var css = fs.readFileSync(path.join(__dirname, "style.css"), {
 module.exports = React.createClass({
   render: function() {
     return (
-      <Html css={css} title="example">
+      <Html css={css} header={{title : "sidebar hero example"}}>
         <Content>
           <Row>
             <Wrapper type="last">

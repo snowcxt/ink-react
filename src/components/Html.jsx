@@ -2,6 +2,15 @@ var React = require('react');
 var Header = require('./Header');
 
 module.exports = React.createClass({
+  getDefaultProps: function() {
+    return {
+      header: {
+        title: "ink react",
+        imageSrc: "http://placehold.it/200x50"
+      }
+    };
+  },
+
   render: function() {
     return (
       <html>
@@ -18,7 +27,9 @@ module.exports = React.createClass({
               <tr>
                 <td align="center" className="center" valign="top">
                   <center>
-                    <Header image="http://placehold.it/200x50" title={this.props.title}/>
+                    {this.props.header
+                      ? <Header imageSrc={this.props.header.imageSrc} title={this.props.header.title}/>
+                      : null}
                     {this.props.children}
                   </center>
                 </td>
