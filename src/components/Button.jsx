@@ -4,11 +4,13 @@ module.exports = React.createClass({
   render: function() {
     return (
       <table className={this.props.className}>
-        <tr>
-          <td>
-            <a href={this.props.href}>{this.props.children}</a>
-          </td>
-        </tr>
+        <tbody>
+          <tr>
+            <td>
+              <a href={this.props.href}>{this.props.children}</a>
+            </td>
+          </tr>
+        </tbody>
       </table>
     );
   }

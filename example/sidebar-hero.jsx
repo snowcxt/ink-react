@@ -50,11 +50,13 @@ module.exports = React.createClass({
                 <h6>Header Thing</h6>
                 <p>Sub-head or something</p>
                 <table>
-                  <tr>
-                    <td>
-                      <a href="#">Just a Plain Link &raquo;</a>
-                    </td>
-                  </tr>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <a href="#">Just a Plain Link &raquo;</a>
+                      </td>
+                    </tr>
+                  </tbody>
                 </table>
                 <hr/>
               </Column>

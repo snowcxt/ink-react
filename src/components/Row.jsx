@@ -9,9 +9,11 @@ module.exports = React.createClass({
   render: function() {
     return (
       <table className={"row " + this.props.type}>
-        <tr>
-          {this.props.children}
-        </tr>
+        <tbody>
+          <tr>
+            {this.props.children}
+          </tr>
+        </tbody>
       </table>
     );
   }

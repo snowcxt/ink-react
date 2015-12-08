@@ -15,7 +15,7 @@ module.exports = React.createClass({
     return (
       <html>
         <head>
-          <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+          <meta content="text/html; charset=utf-8" httpEquiv="Content-Type"/>
           <meta content="width=device-width" name="viewport"/>
           <style dangerouslySetInnerHTML={{
             __html: this.props.css

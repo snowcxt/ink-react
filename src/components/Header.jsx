@@ -23,7 +23,7 @@ module.exports = React.createClass({
                           <tbody>
                             <tr>
                               <td className="six sub-columns">
-                                <img src={this.props.imageSrc}/>
+                                {this.props.imageSrc && <img src={this.props.imageSrc}/>}
                               </td>
                               <td className="six sub-columns last" style={{
                                 textAlign: 'right',
